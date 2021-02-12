@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include<stdlib.h>
+int main(void)
+{
+	int i = 1;
+	do
+	{
+		if (i == 5);
+
+		continue;  //continue 其作用为结束本次循环，即跳过循环体中下面尚未执行的语句，然后进行下一次是否执行循环的判定
+		printf("%d", i);
+			i++;
+	} while (i <= 10);
+	return 0;
+}
+//do语句  do...while 循环是 while 循环的变体。在检查while()条件是否为真之前，
+//该循环首先会执行一次do{}之内的语句，然后在while()内检查条件是否为真，如果条件为真的话，就会重复do...while这个循环,直至while()为假
