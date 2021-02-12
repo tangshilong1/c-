@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include<stdlib.h>
+int main(void)
+{
+	int i = 1;
+	while (i <= 100) //给出一个条件
+	{
+		if (i % 2 == 1)  //%求模
+			printf("%d\n", i);
+			i++;       //自加1
+	}
+}
