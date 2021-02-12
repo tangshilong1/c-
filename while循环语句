@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include<stdlib.h>
+int main(void)
+{
+	int i = 1;
+	while (i <= 100)    //这里给出1到100的循环条件后面i++是在自身的基础上加1一直加到100停止，
+	{
+		printf("%d\n", i);
+	    i++;
+	}
+	return 0;
+}
