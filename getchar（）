@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include<stdlib.h>
+int main(void)
+{
+	int ch = 0;
+	while ((ch = getchar()) != EOF)  // != 字符意思不等于 是让俩个值比较等于则false不等于ture
+	{                                //eof；  end of file 文件结束标志
+		putchar(ch);                //getchar可以用它来赋一个字符的值.
+	}
+	return 0;
+}
