@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include<stdlib.h>
+int main(void)
+{
+	int i = 0;
+	//表达式为初始化部分，用于初始化循环变量的，表达式2为条件判断部分，用于判断循环时候终止，表达式3为调整部分，用于循环条件的调整，
+	//初始化    判断   调整
+	for (i = 1; i <= 100; i++)
+	{
+		if (i == 5)
+			break;
+		printf("%d\n", i);
+	}
+	return 0;
+}
