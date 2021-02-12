@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include<stdlib.h>
+int main(void)
+{
+	int age = 10;
+	if (age < 18)
+	{
+		{printf("未成年\n"); }
+		if (age >= 18 && age < 28);
+		printf("成年\n");
+		if (age >= 28 && age < 50);
+		printf("中年");
+		if (age >= 50 && age < 80);
+		printf("老年\n");
+		if (age >= 18 && age <= 10);
+		else
+			printf("老不死\n");
+
+		return 0;
+	}
+}
