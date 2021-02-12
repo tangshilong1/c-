@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include<stdlib.h>
+int main(void)
+{
+	int day = 0;
+	scanf_s("%d",  &day);    //scnaf通过键盘给程序中的变量赋值
+	switch (day)             //switch切换
+	{
+	case 1:                  //case是用来表示选内择结构的。
+		printf("星期1\n");
+		break;               //break专门用于跳出 switch 语句。所谓“跳出”，是指一旦遇到 break，就不再执行 switch 中的任何语句
+	case 2:
+		printf("星期2\n");
+	case 3:
+		printf("星期3\n");
+		break;
+	case 4:
+		printf("星期4\n");
+		break;
+	case 5:
+		printf("星期5\n");
+		break;
+	case 6:
+		printf("星期6\n");
+		break;
+	case 7:
+		printf("星期7\n");
+		break;
+	}
+	return 0;
+}
