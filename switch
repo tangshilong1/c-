@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{     
+	int order = -1;            //给order赋值-1
+	scanf_s("%d", &order);     //scanf—s是通过任意键盘指令给程序赋值
+	if (1 == order)            //如果1等于order条件成立就打印添加一个学生
+	{
+		printf("添加一个学生\n");
+	}
+	else if (2 == order)     //否则如果2等于order删除一个学生以此类推以下相同
+	{
+		printf("删除一个学生\n");
+	}
+	else if (3 == order)
+	{
+		printf("浏览学生信息\n");
+	}
+	else if (4 == order)
+	{
+		printf("推出系统\n");
+	}
+	else
+	{
+		printf("系统无该指令\n");
+	}
+	switch (order)  //计算表达式的值。 并逐个与其后的常量表达式值相比较，当表达式的值与某个常量表达式的值相等时， 即执行其后的语句，然后不再进行判断，继续执行后面所有case后的语句。如表达式的值与所有case后的常量表达式均不相同时，则执行default后的语句     
+	{                //就是计算条件里有的 如果有就打印 没有执行default
+		case 1:
+			printf("添加一个学生\n");
+			break;  //跳出本条语句
+		case 2:
+			printf("删除一个学生\n");
+			break;
+		case 3:  //case 后的常量指的是常量表达式，它必须是整数类型。在一个特定的 switch 语句中，每个 case 常量都必须具有独一无二的值，不可以重复。但是 switch 语句可以包含多个 case 标签。
+			printf("浏览学生信息\n");
+			break;
+		case 4:
+			printf("推出系统\n");
+			break;
+		default:
+			printf("系统无该指令\n");
+	}
+	system("pause");
+	return 0;
+}
